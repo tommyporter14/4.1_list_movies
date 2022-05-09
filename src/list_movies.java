@@ -30,12 +30,13 @@ public class list_movies {
 
 		Scanner scnr = new Scanner(System.in);
 
-		System.out.println("Welcome to the Movie List Application!\n" + "\n" + "There are 10 movies in this list.\n"
-				+ "The categories are:\n" + "\n" + "1 = ANIMATED\n" + "2 = DRAMA\n" + "3 = HORROR\n" + "4 = SCIFI\n");
+		System.out.println("Welcome to the Movie List Application!\n" + "\n" + "There are 100 movies in this list.\n"
+				+ "The categories are:\n" + "\n" + "1 = ANIMATED\n" + "2 = DRAMA\n" + "3 = HORROR\n" + "4 = SCIFI\n"
+				+ "5 = MUSICAL\n" + "6 = COMEDY\n");
 		do {// main loop
 			String genre = "";
 			do {// do while loop for number / genre system
-				System.out.println("What category are you interested in? (enter 1-4):");
+				System.out.println("What category are you interested in? (enter 1-6):");
 				int choice = scnr.nextInt();
 				if (choice == 1) {
 					genre = "animated";
@@ -48,6 +49,12 @@ public class list_movies {
 					break;
 				} else if (choice == 4) {
 					genre = "scifi";
+					break;
+				} else if (choice == 5) {
+					genre = "musical";
+					break;
+				} else if (choice == 6) {
+					genre = "comedy";
 					break;
 				} else {
 					System.out.println("Thats not a valid choice, try again.");
