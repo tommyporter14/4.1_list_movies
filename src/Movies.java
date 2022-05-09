@@ -7,7 +7,7 @@ public class Movies {
 		return title;
 	}
 
-	public void setTitle(String make) {
+	public void setTitle(String name) {
 		this.title = title;
 	}
 
@@ -15,7 +15,7 @@ public class Movies {
 		return category;
 	}
 
-	public void setCategory(String make) {
+	public void setCategory(String genre) {
 		this.category = category;
 	}
 
